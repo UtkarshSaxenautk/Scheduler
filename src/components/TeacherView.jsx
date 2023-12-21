@@ -17,7 +17,7 @@ const TeacherTimeTable = () => {
 
     // Simulate fetching data using axios
     axios
-      .get(`${import.meta.env.BASE_URL}getTeacherView/${teacherName}`)
+      .get(`${import.meta.env.VITE_BASE_URL}/getTeacherView/${teacherName}`)
       .then((response) => {
         setTimetableData(response.data.res);
         setIsLoading(false);
